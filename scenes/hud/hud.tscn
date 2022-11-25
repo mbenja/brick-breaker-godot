@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/fonts/jetbrains_mono_regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/hud/HUD.gd" type="Script" id=2]
+[ext_resource path="res://assets/sprites/sprite_heart.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 42
+font_data = ExtResource( 1 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="ScoreLabel" type="Label" parent="."]
+margin_left = 970.0
+margin_top = 20.0
+margin_right = 995.0
+grow_horizontal = 0
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+
+[node name="HeartContainer" type="Node2D" parent="."]
+position = Vector2( 50, 52 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HeartOne" type="Node2D" parent="HeartContainer"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="HeartContainer/HeartOne"]
+texture = ExtResource( 3 )
+
+[node name="HeartTwo" type="Node2D" parent="HeartContainer"]
+position = Vector2( 48, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="HeartContainer/HeartTwo"]
+texture = ExtResource( 3 )
+
+[node name="HeartThree" type="Node2D" parent="HeartContainer"]
+position = Vector2( 96, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="HeartContainer/HeartThree"]
+texture = ExtResource( 3 )

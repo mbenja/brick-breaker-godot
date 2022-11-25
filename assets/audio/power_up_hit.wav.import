@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/power_up_hit.wav-8a27ac370da6bf2468c5309e1db8c748.sample"
+
+[deps]
+
+source_file="res://assets/audio/power_up_hit.wav"
+dest_files=[ "res://.import/power_up_hit.wav-8a27ac370da6bf2468c5309e1db8c748.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
