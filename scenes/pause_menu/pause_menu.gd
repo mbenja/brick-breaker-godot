@@ -9,5 +9,5 @@ func _process(_delta):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			BackgroundMusic.muffle_music()
 		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 			BackgroundMusic.unmuffle_music()
